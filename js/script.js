@@ -1,3 +1,4 @@
+const log = console.log;
 window.addEventListener('storage', function (e) {
     console.log('change');
     document.querySelector('.out').textContent = localStorage.getItem('b1');
@@ -72,9 +73,10 @@ function myTouch1(event) {
         document.querySelector('.div2').addEventListener("touchstart", myTouch2);
         function myTouch2(event) {
             document.querySelector('.out-2').innerHTML = '2'
+            console.log(event);
         }
     }
-    console.log(myTouch1);
+    log(myTouch1);
    
 
     // document.querySelector('.out-2').innerHTML += 'Touch ' + '<br>' + event.touches.length;
