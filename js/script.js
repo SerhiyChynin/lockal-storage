@@ -77,6 +77,9 @@ function myTouch1(event) {
         }
     }
     log(myTouch1);
+    document.querySelector('.btn').onclick() = () => {
+        log('Hello MTHF');
+    }
    
 
     // document.querySelector('.out-2').innerHTML += 'Touch ' + '<br>' + event.touches.length;
